@@ -1,0 +1,14 @@
+
+
+"""
+An intereresting stochastic L-system.
+"""
+
+grammar = {
+            "S" : ["S[-S][+S]S","SS[+S]F","F[-S]SS"], 
+            "F" : ["F+F++F+F"]      }
+
+probability = {
+            "S": [0.5, 0.25, 0.25]  }
+axiom = "S"
+it = 4#iteration number
